@@ -7,7 +7,8 @@
     <title>Portfólio | João Vitor AFB</title>
     <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="assets/style.css">
-    <link rel="stylesheet" href="assets/magic.css">
+
+    <meta name="theme-color" content="#6610F2" />
     <meta name="description" content="Me Chamo João Vitor, Sou Desenvolvedor Web e Social Media Design! Neste Site à Alguns Projetos Meus...">
     <meta name="robots" content= "index, follow">
     <meta name="keywords" content="portfolio, web, design, social media design, photoshop">
@@ -229,6 +230,12 @@
         </p>
        
       </div>
+      <div style="flex-wrap:wrap;" class="grid carrosel grid-cols-1 gap-8 mt-8 md:grid-cols-2 lg:grid-cols-2">
+        <a href="./web/facebook/index.html">
+        <img class="carrosel" src="https://tex.pro.br/wp-content/uploads/2022/02/Recuperar-meu-facebook-antigo-agora.jpg" alt="" srcset="">
+  <span class="pl-20">Clone Facebook</span>
+</a>
+        </div>
   
       <div class="grid carrosel grid-cols-1 gap-8 mt-8 md:grid-cols-2 lg:grid-cols-2">
       <img class="carrosel" src="https://c.tenor.com/iyJ0r-hK4gYAAAAC/em-breve-glitch.gif" alt="" srcset="">
@@ -302,11 +309,11 @@
 
 
 window.sr = ScrollReveal({ reset:true});
-ScrollReveal({ distance: '15px' });
-sr.reveal('#inicio', {duration : 3000, origin: 'right'})
-sr.reveal('#sobre', {duration : 3000, origin: 'left'})
-sr.reveal('#portfoliodev', {duration : 3000,  origin: 'right'})
-sr.reveal('#portfolio', {duration : 3000,  origin: 'left'})
-
+ScrollReveal({ distance: '50px' });
+sr.reveal('#inicio', {duration : 2000, origin: 'bottom'})
+sr.reveal('#sobre', {duration : 2000, origin: 'top'})
+sr.reveal('#portfoliodev', {duration : 2000,  origin: 'right'})
+sr.reveal('#portfolio', {duration : 2000,  origin: 'left'})
+sr.reveal('.mais', {duration : 2000,  origin: 'right'})
 </script>
-</html>
+</html> 
