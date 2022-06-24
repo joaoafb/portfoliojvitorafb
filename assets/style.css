@@ -13,8 +13,22 @@ html {
     transition: 0.3s ease-out;
 
 }
-body{
+@keyframes bg {
+    0%{
+        transition: 0.3s ease-in-out;
+        background: radial-gradient(circle at 1.8% 4.8%, rgb(17, 23, 58) 0%, rgb(58, 85, 148) 90%);
 
+       
+    }
+    100%{
+        transition: 0.3s ease-in-out;
+        background: linear-gradient(109.6deg, rgb(43, 1, 91) 13.4%, rgb(122, 2, 54) 100.2%);
+
+ 
+    }
+}
+body{
+    animation: bg 3s infinite ease-in-out;
     cursor: url('./cursor.cur'), default;
     transition-delay: 1s;
     background-color: black;
@@ -53,30 +67,27 @@ border: 1px solid rgba(17, 24, 39, 0.07);
 
 
 
-@keyframes bgdev {
-    0%{
-        background: linear-gradient(109.6deg, rgb(43, 1, 91) 13.4%, rgb(122, 2, 54) 100.2%);
 
-    }
-    100%{
-        background: radial-gradient(circle at 1.8% 4.8%, rgb(17, 23, 58) 0%, rgb(58, 85, 148) 90%);
 
-    }
-}
-@keyframes bgdesign {
-    0%{
-        background: radial-gradient(circle at 1.8% 4.8%, rgb(17, 23, 58) 0%, rgb(58, 85, 148) 90%);
-
-       
-    }
-    100%{
-        background: linear-gradient(109.6deg, rgb(43, 1, 91) 13.4%, rgb(122, 2, 54) 100.2%);
-
- 
-    }
-}
 
 .nav{
     margin-top: 20px;
     background-color: #111827;
+}
+
+.box{
+    width: 150px;
+    height: 150px;
+    background-color: #111827;
+    border-radius: 10px;
+}
+
+.zoom{
+    transition: 0.3s ease-in-out;
+
+}
+.zoom:hover{
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    transform: scale(110%);
 }
