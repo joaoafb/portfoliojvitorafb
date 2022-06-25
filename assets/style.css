@@ -46,6 +46,33 @@ nav{
     border-radius: 10px;
     transition: 0.3s ease-in-out;
 }
+.a img{
+    filter: brightness(0) invert(1);
+}
+.a{
+    padding: 10px;
+    border-radius: 5px;
+    background: #d61f69;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    float: left;
+}
+.a:hover{
+outline: white;
+    background-color:transparent;
+
+    
+}
+.div{
+    display: flex;
+    justify-content: center;
+}
+#icon{
+    margin: 0;
+    width: 40px;
+}
 .carrosel img:hover{
 
     transform: scale(102%);
