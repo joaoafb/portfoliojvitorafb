@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@1,600&family=Poppins:wght@500&family=Titillium+Web:wght@600&display=swap');
+
+body { 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin:  0 auto;
+    background-color: #0b1014;
+    overflow-x: hidden;
+}
+
+input:focus{
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}
+*::-webkit-scrollbar{
+    width: 0px;
+    background-color: transparent;
+}
+*{  
+    transition: 0.3s ease-in-out;
+    user-select: none;
+    color: white;
+    font-family: 'Titillium Web', sans-serif;
+
+}
+.border-padding {
+    border: 1px solid #F1EEF2;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    padding: 20px;
+}
+.title{
+    color: white;
+    font-size: 25pt;
+}
+
+.sombra{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.img{
+    
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    width: 180px;
+    height: 240px;
+    transition: 0.3s ease-in-out;
+}
+.img:hover{
+    filter: brightness(40%);
+    transform: scale(105%);
+    transition: 0.3s ease-in-out;
+}
+.center{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.result{
+    margin: 20px;
+}
+
+.c{
+    margin:  0 auto;
+    padding: 5px;
+}
+#results{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+#result-list {
+    background: transparent;
+    position: relative;
+    top: 12px;
+
+}
+
+#result-footer {
+
+  margin: auto -20px;
+}
+
+#result-list:after, 
+#result-list:before {
+    bottom: 100%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+#result-list:after {
+
+    border:0;
+
+    left: 20%;
+    margin-left: -19px;
+}
+#result-list:before {
+    border:0;
+    left: 20%;
+    margin-left: -20px;
+}
+.search{
+
+    margin: 0 auto;
+    width: 450px;
+}
+#list-results{
+    justify-content: center;
+    margin: 100px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.filmes{
+    padding: 5px;
+    margin: 5px;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.list-header {
+    border:0;
+    color: #5883FF;
+   
+}
+
+.list-header  #list-count {
+    color: #9B9B9B;
+}
+.rating-div {
+    color: #9B9B9B;
+    
+}
+.rating-div .rating {
+    color: #5883FF;
+}
+.movie-title {
+    font-size: 1.2rem;
+}
