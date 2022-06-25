@@ -67,9 +67,33 @@ border: 1px solid rgba(17, 24, 39, 0.07);
 
 
 
+.final {
+    max-width: 480px;
+    text-align: center;
+    margin: 60px auto;
 
+    color: #fff;
+  }
+
+  .final::after {
+    content: '|';
+    opacity: 1;
+    margin-left: 5px;
+    display: inline-block;
+    animation: blink .7s infinite;
+  }
+
+  @keyframes blink {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
 
 .nav{
+
     margin-top: 20px;
     background-color: #111827;
 }

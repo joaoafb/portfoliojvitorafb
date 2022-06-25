@@ -1,0 +1,43 @@
+html {
+    scroll-behavior: smooth;
+  }
+*::-webkit-scrollbar{
+    background-color: transparent;
+    width: 0px;
+}
+*:focus{
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}
+*{
+    outline: none;
+    scroll-behavior: smooth;
+    user-select: none;
+    transition: 0.3s ease-out;
+
+}
+body{
+
+   background:#f3f4f6;
+
+}
+
+.products{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    padding: 10px;
+}
+
+ion-icon{
+    float: right;
+    zoom: 200%;
+}
+.scale{
+
+}
+.scale:hover{
+    transform: scale(105%);
+}
